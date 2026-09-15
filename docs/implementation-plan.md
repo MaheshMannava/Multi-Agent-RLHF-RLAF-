@@ -54,7 +54,7 @@ Deliverables:
 - Evaluation protocol.
 - Project structure.
 
-Status: completed in the current planning phase.
+Status: completed for the pilot design and repository setup.
 
 ### Phase 1 — Dataset and evaluator
 
@@ -66,6 +66,8 @@ Tasks:
 4. Implement isolated PyTest execution for logic bugs.
 5. Record error messages, failing test IDs, execution time, and success status.
 6. Expand to the paper-style 200-program dataset after the evaluator is stable.
+
+Status: pilot completed. The 20 pilot samples are evaluated automatically; expansion and additional dataset validation remain.
 
 Exit criterion: every sample can be evaluated automatically and produces a deterministic success/failure result.
 
