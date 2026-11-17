@@ -1,1 +1,0 @@
-"""Interactive debugging research prototype."""

@@ -1,0 +1,18 @@
+diff --git a/src/marshmallow/schema.py b/src/marshmallow/schema.py
+index 085c509..4d54987 100644
+--- a/src/marshmallow/schema.py
++++ b/src/marshmallow/schema.py
+@@ -861,11 +861,12 @@ class BaseSchema(base.SchemaABC):
+         return data
+ 
+     def _invoke_field_validators(self, unmarshal, data, many):
++        if data is None:
++            return
+         for attr_name in self.__processors__[(VALIDATES, False)]:
+             validator = getattr(self, attr_name)
+             validator_kwargs = validator.__marshmallow_kwargs__[(VALIDATES, False)]
+             field_name = validator_kwargs['field_name']
+-
+             try:
+                 field_obj = self.fields[field_name]
+             except KeyError:

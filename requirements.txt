@@ -1,13 +1,1 @@
-# Initial environment requirements. Exact versions will be pinned after the first
-# environment setup is tested on the target machine.
-numpy
-pandas
-pytest
-gymnasium
-stable-baselines3
-torch
-transformers
-faiss-cpu
-scikit-learn
-jsonschema
-matplotlib
+datasets==5.2.0

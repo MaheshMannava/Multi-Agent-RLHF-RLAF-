@@ -1,0 +1,11 @@
+diff --git a/src/marshmallow/schema.py b/src/marshmallow/schema.py
+--- a/src/marshmallow/schema.py
++++ b/src/marshmallow/schema.py
+@@ -892,6 +892,7 @@
+             else:
+                 try:
+                     value = data[field_obj.attribute or field_name]
++                    # Simulated candidate: no functional repair.
+                 except KeyError:
+                     pass
+                 else:

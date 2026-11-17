@@ -1,0 +1,3 @@
+Local macOS evaluation, Python 3.9.25, pytest 7.4.4
+tests/test_marshalling.py: 25 passed, 1 warning in 0.02s
+Raw model output contains extra trailing text ignored by git apply; applied.diff records the actual change.

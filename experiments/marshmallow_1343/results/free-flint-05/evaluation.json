@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "evaluation": "local adapted evaluation",
+  "tests_passed": true,
+  "candidate_applied": true,
+  "base_commit": "2be2d83a1a9a6d3d9b85804f3ab545cecc409bb0",
+  "test_exit_code": 0,
+  "elapsed_seconds": 0.242
+}

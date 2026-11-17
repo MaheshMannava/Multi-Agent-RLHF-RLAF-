@@ -1,0 +1,20 @@
+--- a/src/marshmallow/schema.py
++++ b/src/marshmallow/schema.py
+@@ -880,6 +880,8 @@ class BaseSchema(base.SchemaABC):
+     def _invoke_field_validators(self, unmarshal, data, many):
++        if data is None:
++            return
+         for attr_name in self.__processors__[(VALIDATES, False)]:
+             validator = getattr(self, attr_name)
+             validator_kwargs = validator.__marshmallow_kwargs__[(VALIDATES, False)]
+             field_name = validator_kwargs['field_name']
+ 
+\ No newline at end of file.
++        if data is None:
++            return
+         for attr_name in self.__processors__[(VALIDATES, False)]:
+             validator = getattr(self, attr_name)
+             validator_kwargs = validator.__marshmallow_kwargs__[(VALIDATES, False)]
+             field_name = validator_kwargs['field_name']
+ 
+\ No newline at end of file.
